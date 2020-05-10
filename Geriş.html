@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="turkish">
+    <head>
+        <title> Ehasn Shahriary HomePage </title>
+        <link rel= "stylesheet" href="style1.css">
+        <meta charset=" UTF-8"/>
+        <link rel="stylesheet" type="text/css"
+         href=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css "
+        <meta name="description" content=" Lore this My page about Myself "/>
+        
+        <meta name="viewport" content="width=device-width,initital-scale= 1"/>
+         
+        <script type="text/javascript">
+        function validate()
+        {
+           var username = document.getElementById("uname");
+           var password = document.getElementById("pass");
+         
+         
+          
+           if ( username.value.trim() =="" || password.value.trim()=="")
+           {
+              alert("Lütfen alan boş bırakmayın.");
+              return false;
+           }
+
+           else if ( username.value.length<6)
+           {
+              alert(" yanliş kullancı adı girdiniz.");
+              username.style.border ="solid 2px red";
+              return false;
+           }
+
+           else if ( password.value.length >3)
+           {
+              alert("yanliş şifre girdeniz. ");
+              password.style.border ="solid 2px red";
+              return false;
+           }
+
+
+           else if ( password.value.length <3)
+           {
+              alert("yanliş şifre girdeniz. ");
+              password.style.border ="solid 2px red";
+              return false;
+           }
+            
+          else
+          {
+            true;
+          }
+           
+         }
+
+         
+        </script>
+
+        <style>
+             body{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .loag 
+            {
+             animation: slide 2s;
+             }
+
+             .load h1{
+               font-size: 100px;
+                color: white;
+                padding: 0px;
+                text-align: center;
+                margin-top: 100px;
+             }
+             .slider
+             {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100vh;
+                animation: slide 15s infinite;
+                position: relative;
+             }
+
+             .content
+             {
+                color: #fff;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0,0,0,0.5);
+                position: relative;
+
+             }
+
+             .principal {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                position: absolute;
+                letter-spacing: 5px;
+                position: absolute;
+            }
+
+
+             .Giriş_formu h1{
+                font-size: 100px;
+                color: white;
+                padding: 4px;
+                padding-top: 0;
+                margin-top: 0px;
+                margin-right: 10px;
+                position: absolute;
+                
+              
+              
+
+             }
+
+             .Giriş_formu{
+                padding: 24px;
+                width: 500px;
+                margin: 50px auto;
+                margin-top: 250px;
+                background: #3d3d3d;
+                border-radius: 10px;
+                
+
+             }
+
+             
+             #button {
+                background-color: #7a3636;
+                cursor: pointer;
+                color: #fff;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 80px;
+             }
+
+
+             #text {
+               font-size: 20px;
+                font-weight: bold;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+               
+             }
+
+
+             
+             #text1 {
+               font-size: 20px;
+                font-weight: bold;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+               
+             }
+
+
+            
+            @keyframes slide {
+               0%,100%{
+                background-image: url(img1/mr);
+             }
+               0%,100%{
+                background-image: url(img1/mr.jpg);
+             }
+
+             50%{
+                background-image: url(img1/mr.jpg);
+             }
+
+             75%{
+                background-image: url(img1/mr.jpg);
+             }
+
+
+             40%{
+                background-image: url(img1/mr.jpg);
+             }
+
+             50%{
+                background-image: url(img1/2222.JPG);
+             }
+
+             100%{
+                background-image: url(img1/2222.JPG);
+                
+             }
+
+             100%{
+                background-image: url(img1/2222.JPG);
+                
+             }
+
+             100%{
+                background-image: url(img1/2222.JPG);
+                
+             }
+
+             100%{
+                background-image: url(img1/2222.JPG);
+                
+             }
+
+             100%{
+                background-image: url(img1/2222.JPG);
+                
+             }
+
+  
+
+
+
+            
+
+        </style>
+
+    </head>
+   <body>
+         <div class="minu">
+
+            <nav >
+                <ul>
+                    <li><a href ="AnaSayfa.html"> AnaSayfa</a></li>
+                    <li><a href ="Hakkında.html"> Hakkında</a></li>
+                    <li><a href ="Özgeçmiş.html"> Özgeçmiş</a></li>
+                    <li><a href ="Şehrim.html"> Şehrim </a></li>
+                    <li><a href ="Mirasmız.html"> Mirasmız</a></li>
+                    <li><a href ="Geriş.html"> Geriş </a></li>
+                    <li><a href ="Iletişim.html"> Iletişim </a></li>
+    
+                </ul>
+    
+ 
+ 
+ 
+
+
+            </nav>
+
+         </div>
+
+
+        
+      <div class="slider">
+            <div class="load">
+               <h1> Giriş </h1>
+            </div>
+               
+               
+               
+                  
+                    
+                
+            <div class="Giriş_formu">
+                  
+                  <form onsubmit=" return validate()" action="AnaSayfa.html" method="POST">
+
+                     <label id="text"> Kullancı_Adı:</label>
+                     <input id="uname" placeholder="Kullancı_Adı" type="text"/><br><br>
+                     <label id="text1"> Şifre:</label>
+                     <input id="pass" placeholder="Şifre" type="password"/><br><br>
+                     <button id="button" type="submit"> Giriş </button>
+
+                     
+                        
+                  </form> 
+                
+            </div>
+
+         
+      </div>
+           
+            
+
+    </body>
+
+</html>
